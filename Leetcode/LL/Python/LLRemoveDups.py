@@ -20,6 +20,7 @@ class Solution(object):
         return head
 
 if __name__ == "__main__":
-    head, head.next, head.next.next = ListNode(1), ListNode(1), ListNode(2)
+    head = ListNode(1)
+    head.next, head.next.next =  ListNode(1), ListNode(2)
     head.next.next.next = ListNode(3)
-    print Solution().deleteDuplicates(head)
+    print(Solution().deleteDuplicates(head))
